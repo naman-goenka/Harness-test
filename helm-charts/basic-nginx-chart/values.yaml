@@ -2,7 +2,7 @@ replicaCount: 4
 namespace: default
 image:
   repository: nginx
-  tag: <+artifacts.primary.image>
+  tag: <+artifacts.primary.tag>
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
