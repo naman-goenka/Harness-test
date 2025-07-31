@@ -1,0 +1,9 @@
+function:
+
+  name: dnb-cdas-q-sto-cfn-g-batch-ingest
+
+  buildConfig:
+
+    runtime: python12
+
+    entryPoint: handle_request
