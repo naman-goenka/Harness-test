@@ -1,5 +1,5 @@
 replicaCount: 4
-namespace: default
+namespace: <+infra.namespace>
 image:
   repository: nginx
   tag: <+artifacts.primary.tag>
