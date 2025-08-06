@@ -22,13 +22,6 @@ spec:
             - containerPort: {{ .Values.service.port }}
           livenessProbe:
             httpGet:
-              {{- if eq .Release.Name "release-cdae45-canary" }}
-              path: /fail-health
-              httpHeaders:
-                - name: "X-Fail"
-                  value: "true"
-              {{- else }}
               path: /
-              {{- end }}
               port: {{ .Values.service.port }}
             timeoutSeconds: 10  # ⬅️ Liveness probe timeout set to 10 seconds
