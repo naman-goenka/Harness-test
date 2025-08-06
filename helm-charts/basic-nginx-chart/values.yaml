@@ -1,4 +1,4 @@
-replicaCount: 3
+replicaCount: 15
 namespace: <+infra.namespace>
 image:
   repository: nginx
