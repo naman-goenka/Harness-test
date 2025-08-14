@@ -2,7 +2,7 @@ replicaCount: 15
 namespace: <+infra.namespace>
 image:
   repository: nginx
-  tag: <+artifacts.primary.tag>
+  tag: ffdfdecw
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
