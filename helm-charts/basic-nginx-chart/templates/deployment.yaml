@@ -15,6 +15,7 @@ spec:
     metadata:
       labels:
         app: nginx
+        harness.io/track: stable
     spec:
       containers:
         - name: nginx
