@@ -10,6 +10,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
+      harness.io/track: stable
   template:
     metadata:
       labels:
